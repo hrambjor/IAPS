@@ -55,7 +55,7 @@ enum CGMType: String, JSON, CaseIterable, Identifiable {
         case .dexcomG7:
             return URL(string: "dexcomg7://")!
         case .dexcomOne:
-            return URL(string: "dexcomOne://")!
+            return URL(string: "dexcom-one://")!
         case .simulator:
             return nil
         case .libreTransmitter:

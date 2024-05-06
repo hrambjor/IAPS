@@ -450,7 +450,7 @@ class TransmitterSettingsViewController: UITableViewController {
                 if let appURL = URL(string: "dexcomg6://") {
                     UIApplication.shared.open(appURL)
                 }
-                else if let appURL = URL(string: "dexcomOne://") {
+                else if let appURL = URL(string: "dexcom-one://") {
                     UIApplication.shared.open(appURL)
                 }
             }
