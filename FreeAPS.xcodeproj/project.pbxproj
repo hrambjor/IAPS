@@ -70,6 +70,7 @@
 		19F191E02BE4F98F00F6297E /* SharingStateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F191DF2BE4F98F00F6297E /* SharingStateModel.swift */; };
 		19F191E22BE4F9BA00F6297E /* SharingRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F191E12BE4F9BA00F6297E /* SharingRootView.swift */; };
 		19F191E42BE686AE00F6297E /* BareMinimum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F191E32BE686AE00F6297E /* BareMinimum.swift */; };
+		19F7CA862BE9097F004D6DA1 /* dexcomSourceOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F7CA852BE9097F004D6DA1 /* dexcomSourceOne.swift */; };
 		19F95FF329F10FBC00314DDC /* StatDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F95FF229F10FBC00314DDC /* StatDataFlow.swift */; };
 		19F95FF529F10FCF00314DDC /* StatProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F95FF429F10FCF00314DDC /* StatProvider.swift */; };
 		19F95FF729F10FEE00314DDC /* StatStateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F95FF629F10FEE00314DDC /* StatStateModel.swift */; };
@@ -670,6 +671,7 @@
 		19F191DF2BE4F98F00F6297E /* SharingStateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingStateModel.swift; sourceTree = "<group>"; };
 		19F191E12BE4F9BA00F6297E /* SharingRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharingRootView.swift; sourceTree = "<group>"; };
 		19F191E32BE686AE00F6297E /* BareMinimum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BareMinimum.swift; sourceTree = "<group>"; };
+		19F7CA852BE9097F004D6DA1 /* dexcomSourceOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dexcomSourceOne.swift; sourceTree = "<group>"; };
 		19F95FF229F10FBC00314DDC /* StatDataFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatDataFlow.swift; sourceTree = "<group>"; };
 		19F95FF429F10FCF00314DDC /* StatProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatProvider.swift; sourceTree = "<group>"; };
 		19F95FF629F10FEE00314DDC /* StatStateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatStateModel.swift; sourceTree = "<group>"; };
@@ -1711,6 +1713,7 @@
 				38569346270B5DFB0002C50D /* AppGroupSource.swift */,
 				38569344270B5DFA0002C50D /* CGMType.swift */,
 				386A124E271707F000DDC61C /* DexcomSourceG6.swift */,
+				19F7CA852BE9097F004D6DA1 /* dexcomSourceOne.swift */,
 				38569345270B5DFA0002C50D /* GlucoseSource.swift */,
 				E013D871273AC6FE0014109C /* GlucoseSimulatorSource.swift */,
 				38FEF407273B011A00574A46 /* LibreTransmitterSource.swift */,
@@ -3122,6 +3125,7 @@
 				1967DFC029D053AC00759F30 /* IconSelection.swift in Sources */,
 				BDFD165C2AE40688007F0DDA /* DefaultBolusCalcRootView.swift in Sources */,
 				19D4E4EB29FC6A9F00351451 /* Charts.swift in Sources */,
+				19F7CA862BE9097F004D6DA1 /* dexcomSourceOne.swift in Sources */,
 				FEFFA7A22929FE49007B8193 /* UIDevice+Extensions.swift in Sources */,
 				F90692D3274B9A130037068D /* AppleHealthKitRootView.swift in Sources */,
 				3862CC1F273FDC9200BF832C /* CalibrationsChart.swift in Sources */,

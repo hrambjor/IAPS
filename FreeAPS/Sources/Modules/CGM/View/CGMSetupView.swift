@@ -37,7 +37,8 @@ extension CGM {
                     colorPalette: .default,
                     allowDebugFeatures: false
                 )
-            case .dexcomG6:
+            case .dexcomG6,
+                 .dexcomOne:
                 setupViewController = G6CGMManager.setupViewController(
                     bluetoothProvider: bluetoothManager,
                     displayGlucoseUnitObservable: displayGlucoseUnitObservable,

@@ -450,6 +450,9 @@ class TransmitterSettingsViewController: UITableViewController {
                 if let appURL = URL(string: "dexcomg6://") {
                     UIApplication.shared.open(appURL)
                 }
+                else if let appURL = URL(string: "dexcomOne://") {
+                    UIApplication.shared.open(appURL)
+                }
             }
         case .delete:
             let confirmVC = UIAlertController(cgmDeletionHandler: {

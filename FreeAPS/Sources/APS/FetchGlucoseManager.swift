@@ -30,6 +30,7 @@ final class BaseFetchGlucoseManager: FetchGlucoseManager, Injectable {
     private lazy var dexcomSourceG5 = DexcomSourceG5(glucoseStorage: glucoseStorage, glucoseManager: self)
     private lazy var dexcomSourceG6 = DexcomSourceG6(glucoseStorage: glucoseStorage, glucoseManager: self)
     private lazy var dexcomSourceG7 = DexcomSourceG7(glucoseStorage: glucoseStorage, glucoseManager: self)
+    private lazy var dexcomSourceOne = DexcomSourceOne(glucoseStorage: glucoseStorage, glucoseManager: self)
     private lazy var simulatorSource = GlucoseSimulatorSource()
 
     init(resolver: Resolver) {
@@ -50,6 +51,8 @@ final class BaseFetchGlucoseManager: FetchGlucoseManager, Injectable {
             glucoseSource = dexcomSourceG6
         case .dexcomG7:
             glucoseSource = dexcomSourceG7
+        case .dexcomOne:
+            glucoseSource = dexcomSourceOne
         case .nightscout:
             glucoseSource = nightscoutManager
         case .simulator:
@@ -205,6 +208,10 @@ final class BaseFetchGlucoseManager: FetchGlucoseManager, Injectable {
                 } else if self.settingsManager.settings.cgm == .dexcomG6 {
                     if id != self.dexcomSourceG6.transmitterID {
                         self.dexcomSourceG6 = DexcomSourceG6(glucoseStorage: self.glucoseStorage, glucoseManager: self)
+                    }
+                } else if self.settingsManager.settings.cgm == .dexcomOne {
+                    if id != self.dexcomSourceOne.transmitterID {
+                        self.dexcomSourceOne = DexcomSourceOne(glucoseStorage: self.glucoseStorage, glucoseManager: self)
                     }
                 }
             }
